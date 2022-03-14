@@ -1,0 +1,13 @@
+<h3>Module A</h3>
+<p>provided in module a</p>
+<input type="text" #name>
+<button (click)="setName(name.value)">set name</button>
+<br>
+<span>name is : {{aService.getName()}}</span>
+<hr>
+<br>
+<p>provided in component a</p>
+<input type="text" #title>
+<button (click)="setTitle(title.value)">set title</button>
+<br>
+<span>name is : {{commonService.getTitle()}}</span>

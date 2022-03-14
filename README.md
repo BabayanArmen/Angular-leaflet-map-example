@@ -25,3 +25,38 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+//////////////// map leaflet //////////////////////////
+
+https://leafletjs.com/
+
+npm install leaflet
+
+Open the angular.json file and add leaflet.css:
+{
+  // ...
+  "projects": {
+    "angular-leaflet-example": {
+      // ...
+      "architect": {
+        "build": {
+          // ...
+          "options": {
+            // ...
+            "styles": [
+              "./node_modules/leaflet/dist/leaflet.css",
+              "src/styles.css"
+            ],
+            // ..
+          },
+          // ...
+        },
+        // ...
+      }
+    }},
+  "defaultProject": "angular-leaflet-example"
+}
+tutor
+https://www.digitalocean.com/community/tutorials/angular-angular-and-leaflet
+/////////////////////////////////////////////////////////
